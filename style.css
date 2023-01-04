@@ -73,7 +73,7 @@
 
 .news_main {
     margin-left: 180px;
-    margin-right: 50px;
+    margin-right: 180px;
 }
 
 .img_vr {
@@ -85,14 +85,14 @@
 
 .squared_text {
     position: absolute;
-    width: 529px;
     height: 250px;
+    width: 958px;
     background-color: hsl(0, 0%, 100%);
     margin: 117px 0 0 407px;
 }
 
 #title {
-    width: 300px;
+    /* width: 300px; */
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     margin-top: 60px;
@@ -114,6 +114,7 @@
 }
 
 .btn_title {
+    width: 91%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -225,19 +226,22 @@
     text-decoration: underline;
 }
 
+/* Footer Soxial */
 .footer_social {
     width: 100%;
     color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
 }
 
-.buttons_social_footer {
-    position: absolute;
-    right: 0;
-    margin: 50px auto;
+.button_social {
+    line-height: 3;
 }
 
 .btn_social {
-    widows: 100%;
+    width: 100%;
     color: hsl(0, 0%, 100%);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
@@ -250,12 +254,15 @@
     text-decoration: underline;
 }
 
-.footer_paragraph {
+/* .footer_paragraph {
     font-family: 'Alata', sans-serif;
     color: hsl(0, 0%, 41%);
     font-size: 14px;
     position: absolute;
     right: 0;
     margin: 100px auto;
+} */
+
+@media screen and (nax-width: 935px) {
 }
 
