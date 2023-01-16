@@ -23,12 +23,14 @@
 .button_menu {
     width: 100%;
     display: flex;
-    justify-content: space-around   ;
+    justify-content: space-between   ;
     position: absolute;
     top: 0;
     z-index: 1;
     color: hsl(0, 0%, 100%);
     margin-top: 40px;
+    align-items: center;
+    padding: 0 49px;
 }
 
 #title_menu {
@@ -48,7 +50,6 @@
 .btn_menu:hover {
     text-decoration: underline;
 }
-
 
 .letter {
     width: 650px;
@@ -70,6 +71,10 @@
     color: hsl(0, 0%, 100%);
     text-transform: uppercase;
 
+}
+
+#menu_popup {
+    display: none;
 }
 
 .news_main {
@@ -275,12 +280,6 @@
         margin: 0 auto;
     }
 
-    #icon_menu {
-        display: grid;
-        width: 30px;
-        height: 19px;
-    }
-
     .buttons_option {
         display: none;
     }
@@ -402,6 +401,68 @@
         justify-content: center;
         align-items: center;
         margin-right: 0px;
+    }
+}
+
+
+@media screen and (max-width:777px) {
+
+    #buttons_option {
+        display: none;
+    }
+
+    #icon_menu {
+        display: grid;
+        width: 30px;
+        height: 19px;
+    }
+
+    #menu_popup {
+        position: fixed;
+        width: 100%;
+        height: 550%;
+        justify-content: space-around   ;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        color: hsl(0, 0%, 100%);
+        align-items: center;
+        background-color: black;
+        padding: 30px 30px 0 30px;
+        display: none;
+    }
+    
+    #title_menu_popup {
+        font-family: 'Alata', sans-serif;
+        font-weight: bold;
+    }
+    
+    #buttons_option_popup {
+        display: flex;
+        margin-top: 140px;
+        flex-direction: column;
+    }
+    
+    .btn_menu_popup {
+        color: hsl(0, 0%, 100%);
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 100;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-top: 60px;
+        text-decoration: none;
+        margin-top: 30px;
+    }
+
+    .title_close {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #menu_close {
+        width: 20px;
+        height: 20px;
     }
 }
 
