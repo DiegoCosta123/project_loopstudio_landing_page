@@ -291,7 +291,6 @@
     }
 
     .img_vr {
-        width: 70%;
         display: grid;
         max-width: 450px;
         margin: 145px auto;
@@ -463,6 +462,29 @@
     #menu_close {
         width: 20px;
         height: 20px;
+    }
+}
+
+
+@media screen and (max-width: 445px) {
+    .letterTitle {
+        font-size: 35px;
+    }
+}
+
+
+@media screen and (max-width: 309px) {
+    .letterTitle {
+        font-size: 27px;
+    }
+
+    #title_menu {
+        font-size: 20px;
+    }
+
+    #icon_menu {
+        width: 25px;
+        height: 15px;
     }
 }
 
